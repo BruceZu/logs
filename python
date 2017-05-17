@@ -1,0 +1,25 @@
+~/python/needthisproject$ tree
+.
+├── db.sqlite3
+├── downloaded_sqlite3
+│   ├── sqldiff
+│   ├── sqlite3
+│   └── sqlite3_analyzer
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-35.pyc
+    │   ├── settings.cpython-35.pyc
+    │   ├── urls.cpython-35.pyc
+    │   └── wsgi.cpython-35.pyc
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+3 directories, 13 files
+
+~/python/needthisproject$ export PYTHONPATH=$PYTHONPATH:$PWD
+~/python/needthisproject$ export DJANGO_SETTINGS_MODULE=mysite.settings
+~/python/needthisproject$ export PATH=$PATH:`pwd`/downloaded_sqlite3
+~/python/needthisproject$ 
